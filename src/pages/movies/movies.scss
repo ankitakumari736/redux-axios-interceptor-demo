@@ -1,0 +1,71 @@
+.movies-page {
+  padding: 2.5rem;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.6rem;
+}
+
+.movie-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+.movie-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover img {
+  transform: scale(1.05);
+}
+
+.movie-card h4 {
+  padding: 0.8rem 0.8rem 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.4;
+  min-height: 48px;
+}
+
+.movie-card p {
+  padding: 0 0.8rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #f59e0b;
+}
+
+@media (max-width: 768px) {
+  .movies-page {
+    padding: 1.5rem;
+  }
+
+  .movie-grid {
+    gap: 1rem;
+  }
+}

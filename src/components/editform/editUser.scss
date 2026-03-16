@@ -1,0 +1,37 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.55);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 99999;   
+}
+
+.edit-form {
+  background: #ffffff;
+  padding: 30px;
+  width: 420px;
+  max-width: 90%;
+  border-radius: 12px;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  animation: popup 0.25s ease;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

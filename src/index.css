@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+}
+
+.custom-table th {
+  background: #f1f5f9;
+  cursor: pointer;
+}
+
+.custom-table tr:hover {
+  background: #f8fafc;
+}
+
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

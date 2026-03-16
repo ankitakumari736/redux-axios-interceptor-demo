@@ -1,0 +1,121 @@
+.app-layout {
+  min-height: 100vh;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 122px;
+  background: #111827;
+  color: white;
+  padding: 1rem;
+  transition: width 0.3s;
+
+  &.closed {
+    width: 60px;
+  }
+
+  .menu {
+    display: block;
+    color: #cbd5f5;
+    margin: 1rem 0;
+    text-decoration: none;
+
+    &.active {
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+
+.content-wrapper {
+  margin-left: 122px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 155px;
+  height: 56px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1rem;
+  z-index: 10;
+  color: #111827;
+}
+
+.page-content {
+  padding: 1rem 0rem 1rem 0rem;
+  margin-left: 4rem;
+  min-height: calc(100vh - 56px);
+  color: #040404;
+
+
+  .custom-breadcrumb {
+    background-color: #edecec;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    height: 0.5rem;
+    padding: 2rem;
+  }
+
+  .breadcrumb-item {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    align-items: center;
+
+  }
+
+  .custom-breadcrumb a {
+    color: #1243ad;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .custom-breadcrumb a:hover {
+    color: #154cd8;
+    text-decoration: underline;
+  }
+
+  .active {
+    color: #505050;
+    font-weight: 600;
+  }
+
+  .separator {
+    color: #9ca3af;
+  }
+
+  .breadcrumb-current {
+    color: #374151;
+    font-weight: 600;
+  }
+}
+
+.session-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.session-modal {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
